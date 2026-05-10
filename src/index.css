@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --black:   #070908;
+  --black2:  #0c0f0c;
+  --card:    #101410;
+  --card2:   #141914;
+  --green:   #22c55e;
+  --green2:  #16a34a;
+  --border:  rgba(34,197,94,0.11);
+  --border2: rgba(34,197,94,0.22);
+  --faint:   rgba(34,197,94,0.07);
+  --muted:   #5a6e5a;
+  --muted2:  #8a9e8a;
+  --text:    #edf7ed;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  min-height: 100vh;
+  background: var(--black);
+  color: var(--text);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--black2); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 99px; }
+
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+.font-syne { font-family: 'Syne', sans-serif; }
